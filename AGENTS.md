@@ -16,17 +16,6 @@ Do not begin with commands, configuration files, APIs, or implementation
 details. First establish the conceptual location of the subject within the
 larger modern .NET ecosystem.
 
-Every chapter must:
-
-1. Begin with the high-level purpose of the technology.
-2. Connect the new concept to something the reader already understands.
-3. Explain where it fits into a complete application system.
-4. Introduce terminology and mechanics.
-5. Progress into practical implementation.
-6. Cover production concerns and tradeoffs.
-7. Explain what interviewers expect the reader to know.
-8. End with a working exercise and comprehension check.
-
 The reader should never need to understand a lower layer before the chapter
 has established the higher layer that gives it meaning.
 
@@ -45,21 +34,6 @@ Assume the reader already understands:
 - enterprise application development
 
 Do not explain these concepts as though the reader is a beginner.
-
-# Teaching Method
-
-Every major subject must progress through these levels:
-
-1. Why the technology exists
-2. How it relates to the reader's existing mental model
-3. Where it fits in the modern system
-4. Basic usage
-5. Production usage
-6. Tradeoffs and alternatives
-7. Interview expectations
-8. Hands-on exercise
-
-Introduce high-level structure before implementation details.
 
 # Accuracy
 

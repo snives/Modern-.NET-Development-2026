@@ -123,3 +123,13 @@ Ask questions that require explanation rather than memorization.
 Reconstruct the whole concept from the high-level view down.
 
 Do not merely list terms introduced in the chapter.
+
+## Sources
+
+Cite authoritative sources used for factual, version-specific, lifecycle,
+support, market, or time-sensitive claims.
+
+## Further Reading
+
+Provide optional resources for readers who want to go deeper after completing
+the chapter.

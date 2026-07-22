@@ -2,11 +2,15 @@
 
 These instructions apply to all content under `/book`.
 
+Chapter files live directly under `/book` and use the filename format
+`##-Chapter Title.md`, where `##` is the ordinal chapter number from the
+roadmap.
+
 Before drafting a chapter:
 
 1. Read the book roadmap.
 2. Read the preceding chapter.
-3. Read the chapter specification.
+3. Read the chapter specification in the roadmap.
 4. Identify what the reader already knows at this point.
 5. Identify concepts that must not be introduced yet.
 6. Produce or update the chapter outline before writing prose.

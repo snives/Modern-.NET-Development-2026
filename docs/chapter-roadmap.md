@@ -2,7 +2,8 @@
 
 ## Purpose
 
-This roadmap defines the learning progression for the book.
+This roadmap defines the learning progression for the book and serves as the
+chapter specification for each chapter.
 
 The intended reader is an experienced C#/.NET developer who is proficient with Windows, SQL Server, Visual Studio 2019, and traditional enterprise application development, but has not kept up with the evolution of the .NET ecosystem since approximately .NET 5.
 
