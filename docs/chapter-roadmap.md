@@ -59,19 +59,19 @@ Explain how each technology fits into the overall ecosystem.
 
 **Goal**
 
-Show what a typical professional development workflow looks like in 2026.
+Show what a typical professional development workflow looks like in 2026
+without requiring the reader to implement the full delivery pipeline yet.
 
 **Topics**
 
 * Local development
 * Source control
 * Pull requests
-* Continuous Integration
-* Continuous Deployment
 * Testing
 * Code reviews
 * AI coding assistants
 * Development environments
+* How work moves from local code to production
 
 By the end of this chapter the reader should understand the complete software lifecycle at a high level.
 
@@ -139,9 +139,30 @@ Secrets management
 
 ---
 
+## Chapter 8 — Automated Testing and CI Basics
+
+Why automated validation exists
+
+Unit tests
+
+Integration tests
+
+Test projects
+
+GitHub Actions
+
+Pull request checks
+
+Build pipelines
+
+This chapter should focus on validating application changes before deployment,
+not on production release automation.
+
+---
+
 # Part III — Linux and Containers
 
-## Chapter 8 — Linux for .NET Developers
+## Chapter 9 — Linux for .NET Developers
 
 Basic Linux concepts
 
@@ -159,7 +180,7 @@ The objective is familiarity rather than Linux administration.
 
 ---
 
-## Chapter 9 — Docker
+## Chapter 10 — Docker
 
 Why containers exist
 
@@ -177,7 +198,7 @@ Container registries
 
 ---
 
-## Chapter 10 — Docker Compose
+## Chapter 11 — Docker Compose
 
 Running multi-container applications
 
@@ -193,7 +214,7 @@ Development environments
 
 # Part IV — Cloud Native Development
 
-## Chapter 11 — Deploying ASP.NET Core
+## Chapter 12 — Deploying ASP.NET Core
 
 Publishing
 
@@ -207,7 +228,7 @@ Production deployments
 
 ---
 
-## Chapter 12 — Cloud Platforms
+## Chapter 13 — Cloud Platforms
 
 Azure
 
@@ -227,7 +248,82 @@ How the major cloud providers compare.
 
 ---
 
-## Chapter 13 — Kubernetes
+## Chapter 14 — Observability Basics and Production Diagnostics
+
+Why production diagnostics exist
+
+ASP.NET Core logging
+
+Health checks
+
+Structured logging
+
+Basic metrics
+
+Local diagnostics
+
+Production monitoring concepts
+
+This chapter should establish enough observability knowledge for the reader to
+understand deployed applications before introducing distributed tracing or
+multi-service monitoring.
+
+---
+
+# Part V — Building Production Systems
+
+## Chapter 15 — Distributed Applications
+
+Caching
+
+Redis
+
+Messaging
+
+Background services
+
+Queues
+
+Resilience
+
+---
+
+## Chapter 16 — CI/CD Deployment Pipelines
+
+Continuous Deployment
+
+Release pipelines
+
+Azure DevOps
+
+Container publishing
+
+Environment promotion
+
+Deployment approvals
+
+Rollback strategies
+
+This chapter should build on the earlier CI basics chapter and focus on safely
+moving validated changes into production environments.
+
+---
+
+## Chapter 17 — Infrastructure as Code
+
+Why infrastructure became code
+
+Terraform
+
+Bicep
+
+Configuration management
+
+Environment provisioning
+
+---
+
+## Chapter 18 — Kubernetes
 
 Why orchestration exists
 
@@ -247,73 +343,30 @@ This chapter should emphasize concepts over operational expertise.
 
 ---
 
-# Part V — Building Production Systems
+## Chapter 19 — Advanced Observability
 
-## Chapter 14 — Distributed Applications
-
-Caching
-
-Redis
-
-Messaging
-
-Background services
-
-Queues
-
-Resilience
-
----
-
-## Chapter 15 — Observability
-
-Structured logging
+OpenTelemetry
 
 Metrics
 
 Tracing
 
-OpenTelemetry
+Distributed tracing
 
-Monitoring
+Dashboards
 
 Alerting
 
----
+Multi-service monitoring
 
-## Chapter 16 — CI/CD
-
-GitHub Actions
-
-Azure DevOps
-
-Build pipelines
-
-Automated testing
-
-Container publishing
-
-Deployment pipelines
-
----
-
-## Chapter 17 — Infrastructure as Code
-
-Why infrastructure became code
-
-Terraform
-
-Bicep
-
-Configuration management
-
-Environment provisioning
+This chapter should extend the earlier diagnostics chapter into production
+observability for cloud-native and distributed systems.
 
 ---
 
 # Part VI — AI in Modern .NET
 
-## Chapter 18 — AI Application Architecture
+## Chapter 20 — AI Application Architecture
 
 LLMs
 
@@ -331,7 +384,7 @@ Model selection
 
 ---
 
-## Chapter 19 — AI Development with .NET
+## Chapter 21 — AI Development with .NET
 
 Microsoft.Extensions.AI
 
@@ -345,7 +398,7 @@ Integrating existing business applications
 
 # Part VII — Architecture
 
-## Chapter 20 — Modern Software Architecture
+## Chapter 22 — Modern Software Architecture and Scale
 
 Monoliths
 
@@ -354,12 +407,6 @@ Modular monoliths
 Microservices
 
 Distributed systems
-
-When each approach is appropriate
-
----
-
-## Chapter 21 — Designing for Scale
 
 Horizontal scaling
 
@@ -373,9 +420,11 @@ Cost
 
 Reliability
 
+When each approach is appropriate
+
 ---
 
-## Chapter 22 — Common Architectural Patterns
+## Chapter 23 — Common Architectural Patterns
 
 Repository
 
@@ -393,7 +442,7 @@ When patterns help—and when they add unnecessary complexity.
 
 # Part VIII — Professional Development
 
-## Chapter 23 — Interview Preparation
+## Chapter 24 — Interview Preparation and Career Roadmap
 
 Technical interview topics
 
@@ -404,10 +453,6 @@ System design
 Behavioral expectations
 
 Coding exercises
-
----
-
-## Chapter 24 — Career Roadmap
 
 Skills employers expect
 
