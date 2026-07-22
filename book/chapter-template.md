@@ -132,9 +132,9 @@ Do not merely list terms introduced in the chapter.
 ## Sources
 
 Cite authoritative sources used for factual, version-specific, lifecycle,
-support, market, or time-sensitive claims.
+support, market, or time-sensitive claims.  Markup hyperlinks.
 
 ## Further Reading
 
-Provide optional resources for readers who want to go deeper after completing
-the chapter.
+Provide optional resources for readers who want to go deeper after completing the chapter.
+Markup hyperlinks.
