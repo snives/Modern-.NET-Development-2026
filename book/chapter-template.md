@@ -6,6 +6,11 @@ State the problem this chapter resolves and why the technology exists.
 
 Do not explain implementation details here.
 
+Explain the history of why this came about and what problem it solved even if it might have been to copy other popular
+competing technologies that were released.  
+
+If the chapter is about a technology, describe it's rank in popularity among competing or open source equivalents.  Touch upon what is currently state-of-the-art.
+
 ## Where This Fits
 
 Show the technology inside the complete application architecture.
@@ -38,7 +43,7 @@ The reader should be able to describe:
 - what it is;
 - why it exists;
 - what problem it solves;
-- what it does not solve.
+- what it does not solve. 
 
 ## Layer 2 — System Relationships
 
@@ -89,8 +94,8 @@ Explain:
 
 - when to use it;
 - when not to use it;
-- simpler alternatives;
-- more advanced alternatives;
+- simpler open source or competing alternatives;
+- more advanced open source or competing alternatives;
 - common overengineering mistakes.
 
 ## Layer 7 — Interview Perspective
