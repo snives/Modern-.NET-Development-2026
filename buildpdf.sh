@@ -7,7 +7,7 @@ GENERATED_DIR="$ROOT_DIR/generated"
 OUTPUT_DIR="$ROOT_DIR/PDF"
 BOOK_FILE="$GENERATED_DIR/book.typ"
 TEMPLATE_FILE="$ROOT_DIR/template.typ"
-PDF_FILE="$OUTPUT_DIR/modern-dotnet-guide.pdf"
+PDF_FILE="$OUTPUT_DIR/Snively-Modern-DotNet-Development(2026).pdf"
 
 command -v pandoc >/dev/null 2>&1 || { echo "Error: pandoc is not installed or not in PATH." >&2; exit 1; }
 command -v typst >/dev/null 2>&1 || { echo "Error: typst is not installed or not in PATH." >&2; exit 1; }
