@@ -23,14 +23,16 @@
 #let rule-color = rgb("#d9d3dc")
 #let code-bg = rgb("#f5f3f6")
 #let table-head-bg = rgb("#eee8f2")
-#let authors = ("Steve Snively",)
-#let date = "7/22/2026"
+#let date = "2026"
 #let abstract = none
 #let cols = 1
 
+#let title = "Modern .NET Development (2026)"
+#let authors = ("Steve Snively",)
+
 #set document(
-  title: "Modern .Net Development 2026",
-  author: "Steve Snively",
+  title: title,
+  author: authors,
   keywords: ".NET, Development, C#, Application, Design,",
 )
 
@@ -46,47 +48,6 @@
   paper: "us-letter",
   margin: (top: 0.85in, bottom: 0.8in, left: 0.9in, right: 0.8in),
   numbering: "1",
-  header: context {
-
-    let page-number = counter(page).get().first()
-    if page-number > 1 {
-      let chapters = query(heading.where(level: 1).before(here()))
-      let current-page = here().page()
-      let chapter-on-this-page = query(heading.where(level: 1)).any(heading => heading.location().page() == current-page)
-      let chapter-title = if chapters.len() > 0 {
-        if chapter-on-this-page {
-          none
-        } else {
-          chapters.last().body
-        }
-      } else if title != none {
-        title
-      } else {
-        []
-      }
-
-      block(
-        width: 100%,
-        below: 0.35em,
-        stroke: (bottom: 0.5pt + rule-color),
-      )[
-        #grid(
-          columns: (1fr, auto),
-          column-gutter: 1em,
-          align(left)[#text(size: 8pt, fill: muted)[#chapter-title]],
-          align(right)[#text(size: 8pt, weight: "semibold", fill: accent-dark)[#page-number]],
-        )
-      ]
-    }
-  },
-  footer: context {
-    let page-number = counter(page).get().first()
-    if page-number > 1 {
-      align(center)[
-        #text(size: 7.5pt, fill: muted)[Modern .NET Development]
-      ]
-    }
-  },
 )
 
 #set par(
@@ -221,24 +182,35 @@
   #text(size: 10.5pt, weight: "bold", fill: accent)[#it.body]
 ]
 
+
+// ----------------------
+// Cover
+// ----------------------
+
+
+// ----------------------
 // Title page.
+// ----------------------
+
 #if title != none {
   set page(header: none, footer: none)
 
   align(center + horizon)[
     #block(width: 82%)[
-      #text(size: 10pt, weight: "bold", tracking: 0.16em, fill: accent)[
-        PROFESSIONAL DEVELOPMENT GUIDE
-      ]
+    
       #v(0.35in)
       #text(size: 34pt, weight: "bold", fill: accent-dark)[#title]
       #v(0.25in)
-      #line(length: 70%, stroke: 3pt + accent)
+        
+      #v(1em)
 
-      #if authors.len() > 1 {
-        v(0.45in)
+      #text(size: 16pt)[A Guide for Experienced C\# Developers]
+
+
+      #if authors.len() > 0 {
+        v(1em)
         text(size: 13pt, fill: muted)[
-          #authors.map(author => author.name).join(" · ")
+          #authors.map(author => author).join(" · ")
         ]
       }
 
@@ -252,64 +224,90 @@
   pagebreak()
   counter(page).update(1)
 
-  set page(
-    header: context {
-      let chapters = query(heading.where(level: 1).before(here()))
-      let chapter-title = if chapters.len() > 0 { chapters.last().body } else { title }
-      block(width: 100%, below: 0.35em, stroke: (bottom: 0.5pt + rule-color))[
-        #grid(
-          columns: (1fr, auto),
-          align(left)[#text(size: 8pt, fill: muted)[#chapter-title]],
-          align(right)[#text(size: 8pt, weight: "semibold", fill: accent-dark)[#counter(page).display("1")]],
-        )
-      ]
-    },
-    footer: align(center)[#text(size: 7.5pt, fill: muted)[Modern .NET Development]],
-  )
 }
-
-// Optional abstract, used as a short book description.
-#if abstract != none {
-  block(
-    width: 100%,
-    inset: 0.85em,
-    above: 0.4em,
-    below: 1em,
-    radius: 3pt,
-    fill: accent-light,
-    stroke: 0.5pt + rule-color,
-  )[
-    #text(weight: "bold", fill: accent-dark)[About this book]
-    #v(0.25em)
-    #abstract
-  ]
-}
-
-
-
-
-// Cover
-
-
 
 // ----------------------
 // Copyright
 // ----------------------
 
-Copyright © 2026 Steve Snively
+#align(center + horizon)[
+    #text(size: 12pt)[Copyright © 2026 Steve Snively]
+  ]
+
+
+
 
 #pagebreak()
+
 
 // ----------------------
 // Table of Contents
 // ----------------------
 
+#set page(header: none,)
 #outline()
 
 #pagebreak()
 
+
+// ----------------------
+//Abstract
+// ----------------------
+
+
+
+
+
 // ----------------------
 // Book Contents
 // ----------------------
+
+#set page(
+  header: context {
+    // normal running header
+
+    let page-number = counter(page).get().first()
+    if page-number > 1 {
+      let chapters = query(heading.where(level: 1).before(here()))
+      let current-page = here().page()
+      let chapter-on-this-page = query(heading.where(level: 1)).any(heading => heading.location().page() == current-page)
+      let chapter-title = if chapters.len() > 0 {
+        if chapter-on-this-page {
+          none
+        } else {
+          chapters.last().body
+        }
+      } else if title != none {
+        title
+      } else {
+        []
+      }
+
+      block(
+        width: 100%,
+        below: 0.35em,
+        stroke: (bottom: 0.5pt + rule-color),
+      )[
+        #grid(
+          columns: (1fr, auto),
+          column-gutter: 1em,
+          align(left)[#text(size: 8pt, fill: muted)[#chapter-title]],
+          align(right)[#text(size: 8pt, weight: "semibold", fill: accent-dark)[#page-number]],
+        )
+      ]
+    }
+  },
+  footer: context {
+    let page-number = counter(page).get().first()
+    if page-number > 1 {
+      align(center)[
+        #text(size: 7.5pt, fill: muted)[#title]
+      ]
+    }
+  },
+
+)
+
+
 
 #include "./generated/book.typ"

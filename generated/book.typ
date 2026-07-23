@@ -12,3 +12,18 @@
 #include "04-Modern .NET.typ"
 #pagebreak(weak: true)
 
+#include "05-ASP.NET Core.typ"
+#pagebreak(weak: true)
+
+#include "06-Data Access.typ"
+#pagebreak(weak: true)
+
+#include "07-Authentication and Security.typ"
+#pagebreak(weak: true)
+
+#include "08-Automated Testing and CI Basics.typ"
+#pagebreak(weak: true)
+
+#include "09-Linux for .NET Developers.typ"
+#pagebreak(weak: true)
+
