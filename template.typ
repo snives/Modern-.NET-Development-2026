@@ -39,7 +39,7 @@
 #set text(
   lang: "en",
   region: "US",
-  font: ("Libertinus Serif", "Times New Roman"),
+  font: ("EB Garamond","Adobe Garamond","Apple Garamond","Garamond","Google Sans Flex", "Consolas"),
   size: 10.5pt,
   fill: ink,
 )
@@ -89,7 +89,7 @@
   inset: (x: 0.28em, y: 0.08em),
   radius: 2pt,
   fill: code-bg,
-  text(font: ("Cascadia Mono", "Consolas", "DejaVu Sans Mono"), size: 0.88em)[#it.text],
+  text(font: ("Courier Prime","Cascadia Mono", "Consolas", "DejaVu Sans Mono"), size: 0.88em)[#it.text],
 )
 
 // Fenced code blocks.
@@ -104,7 +104,7 @@
   stroke: (left: 2.5pt + accent, rest: 0.4pt + rule-color),
 )[
   #text(
-    font: ("Cascadia Mono", "Consolas", "DejaVu Sans Mono"),
+    font: ("Courier Prime","Cascadia Mono", "Consolas", "DejaVu Sans Mono"),
     size: 8.5pt,
     fill: ink,
   )[#it.text]
@@ -147,14 +147,13 @@
     breakable: false,
   )[
     #if it.numbering != none {
-      text(size: 10pt, weight: "bold", fill: accent, tracking: 0.12em)[
-        CHAPTER #counter(heading).display("1")
+      text( font:("Google Sans Flex"), size: 80pt, weight: "bold", fill: accent, tracking: 0.12em)[
+        #counter(heading).display("1")
       ]
-      v(0.18in)
+      v(0.0em)
     }
-    #text(size: 25pt, weight: "bold", fill: accent-dark)[#it.body]
-    #v(0.16in)
-    #line(length: 100%, stroke: 2pt + accent)
+    #text(font:("Google Sans Flex"), size: 25pt, weight: "bold", fill: accent-dark)[#it.body]
+    #v(0.3in)
   ]
 }
 
@@ -163,7 +162,7 @@
   below: 1.3em,
   breakable: false,
 )[
-  #text(size: 16pt, weight: "bold", fill: accent-dark)[#it.body]
+  #text(font: ("Google Sans Flex"), size: 16pt, weight: "bold", fill: accent-dark)[#it.body]
 ]
 
 #show heading.where(level: 3): it => block(
@@ -171,7 +170,7 @@
   below: 0.3em,
   breakable: false,
 )[
-  #text(size: 12.5pt, weight: "bold", fill: accent-dark)[#it.body]
+  #text(font: ("Google Sans Flex"), size: 12.5pt, weight: "bold", fill: accent-dark)[#it.body]
 ]
 
 #show heading.where(level: 4): it => block(

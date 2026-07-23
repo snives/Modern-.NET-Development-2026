@@ -27,3 +27,48 @@
 #include "09-Linux for .NET Developers.typ"
 #pagebreak(weak: true)
 
+#include "10-Docker.typ"
+#pagebreak(weak: true)
+
+#include "11-Docker Compose.typ"
+#pagebreak(weak: true)
+
+#include "12-Deploying ASP.NET Core.typ"
+#pagebreak(weak: true)
+
+#include "13-Cloud Platforms.typ"
+#pagebreak(weak: true)
+
+#include "14-Observability Basics and Production Diagnostics.typ"
+#pagebreak(weak: true)
+
+#include "15-Distributed Applications.typ"
+#pagebreak(weak: true)
+
+#include "16-CI-CD Deployment Pipelines.typ"
+#pagebreak(weak: true)
+
+#include "17-Infrastructure as Code.typ"
+#pagebreak(weak: true)
+
+#include "18-Kubernetes.typ"
+#pagebreak(weak: true)
+
+#include "19-Advanced Observability.typ"
+#pagebreak(weak: true)
+
+#include "20-AI Application Architecture.typ"
+#pagebreak(weak: true)
+
+#include "21-AI Development with .NET.typ"
+#pagebreak(weak: true)
+
+#include "22-Modern Software Architecture and Scale.typ"
+#pagebreak(weak: true)
+
+#include "23-Common Architectural Patterns.typ"
+#pagebreak(weak: true)
+
+#include "24-Interview Preparation and Career Roadmap.typ"
+#pagebreak(weak: true)
+
